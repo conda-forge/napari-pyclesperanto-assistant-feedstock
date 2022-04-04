@@ -1,5 +1,5 @@
 {% set name = "napari-pyclesperanto-assistant" %}
-{% set version = "0.12.0" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
-  sha256: 4654a5917d402bf04a87c7d3e8ef7fd5ab276162c0c5fe013b29a6774bff9fcd
+  sha256: 4c566c4595b6433d3a0f8083ab1d6e9d67bb6a3af71025a7e8be6bdfc7c4dd40
 
 build:
   noarch: python
@@ -38,9 +38,11 @@ requirements:
     - python >=3.6
     - scikit-image
     - toolz
+    - typing_extensions
+    - napari-assistant
 
 test:
-  imports:  # [not linux]
+  imports:   # [not linux]
     - napari_pyclesperanto_assistant  # [not linux]
   commands:
     - pip list
