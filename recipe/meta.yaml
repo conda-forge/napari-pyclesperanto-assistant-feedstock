@@ -38,6 +38,8 @@ requirements:
     - python >=3.6
     - scikit-image
     - toolz
+    - typing_extensions
+    - napari-assistant
 
 test:
   imports:   # [not linux]
