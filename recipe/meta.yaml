@@ -1,5 +1,5 @@
 {% set name = "napari-pyclesperanto-assistant" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
-  sha256: 4c566c4595b6433d3a0f8083ab1d6e9d67bb6a3af71025a7e8be6bdfc7c4dd40
+  sha256: bd75a2f3472a1638c456c06fbf8a067a9bff45c80d6c055c3c00661ee06564b6
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - jupytext
     - loguru
     - magicgui
-    - napari >=0.4.7
+    - napari >=0.4.15
     - napari-plugin-engine >=0.1.4
     - napari-skimage-regionprops >=0.2.0
     - napari-time-slicer >=0.4.0
@@ -32,14 +32,14 @@ requirements:
     - napari-workflows >=0.1.1
     - numpy !=1.19.4
     - pandas
-    - pyclesperanto-prototype >=0.12.0
+    - pyclesperanto-prototype >=0.17.1
     - pyopencl
     - pyperclip
     - python >=3.6
     - scikit-image
     - toolz
     - typing_extensions
-    - napari-assistant
+    - napari-assistant >=0.1.10
 
 test:
   imports:   # [not linux]
