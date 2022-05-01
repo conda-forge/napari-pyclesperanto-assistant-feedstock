@@ -24,7 +24,7 @@ requirements:
     - jupytext
     - loguru
     - magicgui
-    - napari >=0.4.7
+    - napari >=0.4.15
     - napari-plugin-engine >=0.1.4
     - napari-skimage-regionprops >=0.2.0
     - napari-time-slicer >=0.4.0
@@ -32,14 +32,14 @@ requirements:
     - napari-workflows >=0.1.1
     - numpy !=1.19.4
     - pandas
-    - pyclesperanto-prototype >=0.12.0
+    - pyclesperanto-prototype >=0.17.1
     - pyopencl
     - pyperclip
     - python >=3.6
     - scikit-image
     - toolz
     - typing_extensions
-    - napari-assistant
+    - napari-assistant >=0.1.10
 
 test:
   imports:   # [not linux]
