@@ -1,5 +1,5 @@
 {% set name = "napari-pyclesperanto-assistant" %}
-{% set version = "0.18.1" %}
+{% set version = "0.18.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
-  sha256: 5e0767168f866570ee97fd91bcd456b0989005c32115313ec2229bcb88916011
+  sha256: 1489fe959f218832d9ff26539ddf46ed5ccb845bee1ef13e365a4f8b0f1e4e15
 
 build:
   noarch: python
