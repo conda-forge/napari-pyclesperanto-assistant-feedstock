@@ -1,5 +1,5 @@
 {% set name = "napari-pyclesperanto-assistant" %}
-{% set version = "0.21.1" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
-  sha256: 069db5986bc0733d2d82bae214cbfe8ca2326ba434ea063790f4420d965bf30f
+  sha256: 11f626edd71a4b57f2a4acfa223cb8df182c56acadb1f86e30b2f8422bce2ffc
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
     - napari-workflows >=0.1.1
     - numpy !=1.19.4
     - pandas
-    - pyclesperanto-prototype >=0.19.0
+    - pyclesperanto-prototype >=0.21.1
     - pyopencl
     - pyperclip
     - python >=3.6
