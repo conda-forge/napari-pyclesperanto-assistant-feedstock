@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_pyclesperanto_assistant-{{ version }}.tar.gz
   sha256: 6df5e59e105d91f49826d57b2c61091271f62bba9d061dcb9c0c12d3ca000843
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - jupyter
@@ -35,7 +35,7 @@ requirements:
     - pyclesperanto-prototype >=0.21.1
     - pyopencl
     - pyperclip
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-image
     - toolz
     - typing_extensions
@@ -52,6 +52,7 @@ test:
     - oclgrind  # [win]
     - pip
     - pocl  # [not win]
+    - python {{ python_min }}
 
 about:
   home: https://github.com/clesperanto/napari_pyclesperanto_assistant
